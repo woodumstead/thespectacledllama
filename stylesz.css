@@ -10,19 +10,22 @@ html {
       max-height: 30px; min-height: 30px; top: 0; margin-top: 0;
       background-color: rgba(255, 235, 205, 0.281); 
       margin: 0; padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;}
+    font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;
+    
+}
 
   .toptext { 
       display: flex; 
       justify-content: center; 
-      font-family: Verdana, Geneva, Tahoma, sans-serif;}
+      font-family: 'Lora', serif;
+      font-weight: lighter;}
 
   .body::-webkit-scrollbar {
     display: none;
   }
   
   body {
-    font-family: Arial;
+    
     padding: 20px;
     background: #f1f1f1;
     -ms-overflow-style: none;
@@ -35,12 +38,14 @@ html {
     text-align: center;
     background: rgba(204, 190, 190, 0.274); 
     
+    
   }
 
   .Spectacled { 
       margin-top: 50px; 
       display: inline-block;
       bottom: 45px; position absolute; 
+      font-family: 'Lora', serif;
 
     
     }
@@ -82,11 +87,22 @@ html {
     margin-top: 20px;
   }
 
-  .entrytitle { border-top: 1.4px double indigo;}
+  /* entry section */
 
-  .description { text-indent: 1.6cm;}
+  .entrytitle { border-top: 1.4px double indigo; font-family: 'Merienda', cursive;}
 
-  .paragraph {margin: 0; padding: 0; font-size: 1.65rem; font-family: Fasthand;}
+  .description { text-indent: 1.6cm; font-family: 'Merienda', cursive; text-decoration: underline;
+}
+
+.fakeimage { width: 100%; top: 0; padding: 0; }
+
+  .paragraph {
+      margin: 0;
+      padding: 0;
+       font-size: 1.65rem;
+      font-family: 'Merienda', cursive;
+      border-bottom: dotted gray;
+}
   
   /* Clear floats after the columns */
   .row:after {
