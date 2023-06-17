@@ -1,16 +1,16 @@
 html { 
     scroll-behavior: smooth; 
     }
-* {}
 * {
-    box-sizing: border-box; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   .top { 
       max-height: 30px; min-height: 30px; top: 0; margin-top: 0;
       background-color: rgba(255, 235, 205, 0.281); 
       margin: 0; padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bold;
       border-radius: 5px;
     
 }
@@ -22,31 +22,33 @@ html {
       font-weight: lighter;}
 
   .body::-webkit-scrollbar {
-    display: none;
+      display: none;
   }
   
   body {
     
-    padding: 20px;
-    background: #f1f1f1;
-    -ms-overflow-style: none;
+      padding: 20px;
+      background: #f1f1f1;
+      -ms-overflow-style: none;
   }
   
-  /* Header/Blog Title */
+  /* Header/Blog Title -=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
   .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: rgba(204, 190, 190, 0.274); 
-    border-radius: 5px;
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: rgba(204, 190, 190, 0.274); 
+      border-radius: 5px;
+      display: flex;
     
     
   }
 
   .Spectacled { 
       margin-top: 50px; 
-      display: inline-block;
-      bottom: 45px; position absolute; 
+      display: flex;
+      flex-wrap: wrap;
+      bottom: 45px;  
       font-family: 'Lora', serif;
 
     
@@ -54,11 +56,11 @@ html {
 
   .pawn { 
       flex-wrap: wrap; 
-      height: 5%; width: 5%;
-       margin: 0; 
-       display: inline-block;  
-       top: 45px; 
-       margin-top: 0%;
+      height: 5%; 
+      width: 5%;
+      margin: 0;   
+      top: 45px; 
+      margin-top: 0%;
        
     }
   
@@ -83,17 +85,21 @@ html {
     padding: 20px; */
   }
   
-  /* Add a card effect for articles */
+  /* Add a card effect for articles 
   .card {
     padding: 20px;
     margin-top: 20px;
   }
+  */
 
-  /* entry section */
+   /* entry section(blog post) -=-=-=-=-=-==-=-=-=-=-=-=-=-=-=*/
 
-  .entrytitle { border-top: 1.4px double indigo; font-family: 'Merienda', cursive;}
+  .entrytitle { border-top: 1.4px double indigo; 
+    font-family: 'Merienda', cursive;}
 
-  .description { text-indent: 1.6cm; font-family: 'Merienda', cursive; text-decoration: underline;
+  .description { text-indent: 1.6cm; 
+    font-family: 'Merienda', cursive; 
+    text-decoration: underline;
 }
 
 .fakeimage { width: 100%; top: 0; padding: 0; }
@@ -101,19 +107,20 @@ html {
   .paragraph {
       margin: 0;
       padding: 0;
-       font-size: 1.65rem;
+      font-size: 1.65rem;
       font-family: 'Merienda', cursive;
       border-bottom: dotted gray;
 }
   
-  /* Clear floats after the columns */
+  /* Clear floats after the columns 
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
+  */
   
-  /* Footer */
+  /* Footer  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-==*/
   .footer {
     padding: 2px;
     text-align: center;
@@ -126,14 +133,18 @@ html {
 }
 
   .arrow { 
-        display: inline-flex; position: absolute; height: 2.7rem;
+        display: inline-flex; 
+        position: absolute; 
+        height: 2.7rem;
   }
 
 
   .fa {
     padding: 20px;
-   display: inline-flex; justify-content: flex-end; position: absolute
-    width: 50%; height: 50%; 
+    display: inline-flex; 
+    justify-content: flex-end; 
+    position: absolute width: 50%; 
+    height: 50%; 
   }
     .fa:hover {
         opacity: 0.7;
@@ -145,3 +156,4 @@ html {
       padding: 0;
     }
   }
+
